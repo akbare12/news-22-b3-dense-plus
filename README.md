@@ -11,4 +11,6 @@ timeline, and an explicit verification legend (CONFIRMED / OFFICIAL / REPORTED /
 CLAIM) with a named source on every story.
 
 Run: `python3 main.py` — copies `entry.png` to `/output/entry.png`
-(stdlib only, verified byte-identical by sha256).
+(stdlib only, verified byte-identical by sha256). The program exits non-zero
+if the copy's size or sha256 does not match the bundled source, so a second
+run always produces the identical output.
